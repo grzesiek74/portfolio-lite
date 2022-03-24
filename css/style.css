@@ -275,20 +275,174 @@ nav.mobile.active {
 
 header#home {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     background-image: url("../img/header-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* z-index: -1; */
+}
+
+
+.header-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
     z-index: -1;
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.home h2 {
+    margin-top: 80px;
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+
+.home h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+}
+
+.home .check {
+    margin-top: 100px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+@media (min-width: 412px) {
+    .home h2 {
+        font-size: 40px;
+    }
+
+    .home h3 {
+        font-size: 34px;
+    }
+
+    .home .check {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 570px) and (orientation: landscape) {
+    header#home {
+        height: 100vh;
+    }
+
+    .home h2 {
+        font-size: 36px;
+    }
+
+    .home h3 {
+        font-size: 28px;
+    }
+
+    .home .check {
+        margin-top: 60px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 846px) and (orientation: landscape) {
+    .home h2 {
+        font-size: 48px;
+    }
+
+    .home h3 {
+        font-size: 38px;
+    }
+
+    .home .check {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .home h2 {
+        font-size: 58px;
+    }
+
+    .home h3 {
+        font-size: 48px;
+    }
+
+    .home .check {
+        margin-top: 180px;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
 
 @media (min-width: 1024px) {
     header#home {
         background-image: url("../img/header-big.jpg");
     }
+
+    .home h2 {
+        margin-top: 0;
+        font-size: 58px;
+    }
+
+    .home h3 {
+        font-size: 48px;
+    }
+
+    .home .check {
+        margin-top: 180px;
+        padding: 15px;
+        font-size: 18px;
+        transition: .3s;
+    }
+
+    .home .check:hover {
+        background-color: #fff;
+        color: black;
+        border-color: black;
+    }
 }
+
+@media (min-width: 1366px) {
+
+
+    .home h2 {
+        font-size: 72px;
+    }
+
+    .home h3 {
+        font-size: 62px;
+    }
+
+    .home .check {
+        margin-top: 100px;
+        padding: 18px;
+        font-size: 20px;
+    }
+}
+
 
 .back_to_home {
     position: fixed;
@@ -313,7 +467,7 @@ header#home {
     cursor: pointer;
     opacity: 1;
     transition: all .5s;
-    z-index: 99;
+    z-index: 80;
 }
 
 .back_active:hover {
