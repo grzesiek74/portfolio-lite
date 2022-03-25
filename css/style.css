@@ -2,7 +2,7 @@
 300, 400, 700 Rajdhani
 font-family: 'Russo One', sans-serif; - logo*/
 
-/* Resolutions: 
+/* Resolutions:
     320x570
     360x640
     412x846
@@ -216,18 +216,21 @@ nav.mobile.active {
 
     .navbar-d {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        height: 15vh;
+        /* justify-content: center; */
+        justify-content: space-around;
+        /* height: 15vh; */
+        height: 12vh;
         background-color: rgb(245, 238, 238);
-        padding: 60px 0;
+        /* padding: 60px 0; */
     }
 
     .navlist-d {
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 
     .navlist-d li {
