@@ -21,6 +21,7 @@ font-family: 'Russo One', sans-serif; - logo*/
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
 
 body {
@@ -226,9 +227,9 @@ nav.mobile.active {
         background-color: rgb(245, 238, 238);
         /* padding: 60px 0; */
 
-        /* position: fixed;
-        z-index: 99;
-        width: 100%; */
+        position: fixed;
+        z-index: 3;
+        width: 100%;
     }
 
     .navlist-d {
