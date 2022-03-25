@@ -809,8 +809,8 @@ section.about {
 /* SEKCJA PORTFOLIO */
 
 section.portfolio {
-    background-color: rgb(255, 255, 255);
-    /* background-image: url("../img/header2-big.jpg"); */
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("../img/header2-big.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
