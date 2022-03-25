@@ -225,6 +225,10 @@ nav.mobile.active {
         height: 12vh;
         background-color: rgb(245, 238, 238);
         /* padding: 60px 0; */
+
+        /* position: fixed;
+        z-index: 99;
+        width: 100%; */
     }
 
     .navlist-d {
@@ -817,6 +821,7 @@ section.portfolio {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: rgb(0, 0, 0);
     padding-bottom: 50px;
     position: relative;
